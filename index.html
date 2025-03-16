@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>1st web</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h2>Login</h2>
+
+        <form id="loginForm">
+
+            <input type="email" placeholder="Email" id="email" required>
+
+            <input type="password" placeholder="Password" id="password" required>
+
+            <button type="submit">Login</button>
+
+            <p><a href="#">Forgot Password?</a></p>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+<div class="list-container">
+
+    <h2>Customize 5th Column</h2>
+
+    <input type="text" id="customColName" placeholder="Enter 5th Column Name" />
+
+    <button onclick="saveCustomColumn()">Save Name</button>
+
+    <h2>Your Data Lists</h2>
+
+    <input type="text" id="name" placeholder="Name" />
+
+    <input type="number" id="rs" placeholder="Rs (Price)" />
+
+    <input type="number" id="kg" placeholder="Kg (Weight)" />
+
+    <input type="text" id="company" placeholder="Company" />
+
+    <input type="text" id="custom" placeholder="Custom Data" />
+
+    <button onclick="addItem()">Add</button>
+
+    <div id="listsContainer"></div>
+
+</div>
+<input type="text" id="search" placeholder="Search item..." onkeyup="filterList()">
+<button onclick="toggleTheme()">🌙 Dark Mode</button>
+<input type="text" id="username" placeholder="Enter your name">
+
+<button onclick="login()">Login</button>
+<canvas id="myChart"></canvas>
+<button onclick="shareWhatsApp()">📩 Share on WhatsApp</button>
+<link rel="manifest" href="manifest.json">
+<p id="total-spent">Total Spent: Rs 0</p>
+<button onclick="toggleTheme()">🌙 Toggle Dark Mode</button>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customer List</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <button onclick="toggleTheme()">🌙 Dark Mode</button>
+
+    <input type="text" id="search" placeholder="Search item..." onkeyup="filterList()">
+
+    <input type="text" id="name" placeholder="Speak to add item">
+
+    <button onclick="startListening()">🎤 Speak</button>
+
+    
+
+    <table id="customerTable">
+
+        <tr>
+
+            <th>Name</th>
+
+            <th>Rs</th>
+
+            <th>Kg</th>
+
+            <th>Company</th>
+
+            <th>Custom</th>
+
+        </tr>
+
+        <tr><td>Milk</td><td class="rs">50</td><td class="kg">1</td><td>Amul</td><td>Essential</td></tr>
+
+        <tr><td>Rice</td><td class="rs">500</td><td class="kg">10</td><td>Basmati</td><td>Grains</td></tr>
+
+    </table>
+
+    <p>Total Price: <span id="totalRs">0</span> Rs</p>
+
+    <p>Total Weight: <span id="totalKg">0</span> Kg</p>
+
+    <button onclick="exportToCSV()">📥 Export CSV</button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h2>Login</h2>
+
+        <form id="loginForm">
+
+            <input type="email" placeholder="Email" id="email" required>
+
+            <input type="password" placeholder="Password" id="password" required>
+
+            <button type="submit">Login</button>
+
+            <p><a href="#">Forgot Password?</a></p>
+
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+<div class="list-container">
+
+    <h2>Customize 5th Column</h2>
+
+    <input type="text" id="customColName" placeholder="Enter 5th Column Name" />
+
+    <button onclick="saveCustomColumn()">Save Name</button>
+
+    <h2>Your Data Lists</h2>
+
+    <input type="text" id="name" placeholder="Name" />
+
+    <input type="number" id="rs" placeholder="Rs (Price)" />
+
+    <input type="number" id="kg" placeholder="Kg (Weight)" />
+
+    <input type="text" id="company" placeholder="Company" />
+
+    <input type="text" id="custom" placeholder="Custom Data" />
+
+    <button onclick="addItem()">Add</button>
+
+    <div id="listsContainer"></div>
+
+</div
+  <div id="loginContainer">
+
+    <h2>Login</h2>
+
+    <input type="text" id="username" placeholder="Enter your name">
+
+    <button onclick="login()">Login</button>
+
+</div>
+
+<div id="appContainer" style="display: none;">
+
+    <h2>Welcome, <span id="userDisplayName"></span></h2>
+
+    <button onclick="logout()">Logout</button>
+
+</div>
+<table id="orderTable">
+
+    <tr>
+
+        <th>Order ID</th>
+
+        <th>Customer Name</th>
+
+        <th>Items</th>
+
+        <th>Status</th>
+
+        <th>Action</th>
+
+    </tr>
+
+</table>
+
+<button onclick="placeOrder()">🛒 Place Order</button>
+<h2>Add New Product</h2>
+
+<input type="text" id="productName" placeholder="Product Name" required>
+
+<input type="number" id="productPrice" placeholder="Price (Rs)" required>
+
+<textarea id="productDesc" placeholder="Description"></textarea>
+
+<input type="file" id="productImages" multiple accept="image/*">
+
+<button onclick="addProduct()">➕ Add Product</button>
+
+<h2>Available Products</h2>
+
+<div id="productList"></div>
+<h2>🛒 Your Cart</h2>
+
+<div id="cartList"></div>
+
+<p><strong>Total Price: Rs <span id="totalPrice">0</span></strong></p>
+
+<button onclick="clearCart()">🗑 Clear Cart</button>
+
+<h2>Available Products</h2>
+
+<div id="productList"></div>
+<h2>🛒 Your Cart</h2>
+
+<div id="cartList"></div>
+
+<p><strong>Total Price: Rs <span id="totalPrice">0</span></strong></p>
+
+<button onclick="clearCart()">🗑 Clear Cart</button>
+
+<h2>Available Products</h2>
+
+<div id="productList"></div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
